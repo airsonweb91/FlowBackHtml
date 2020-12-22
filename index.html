@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flowback | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Plugins & Fremwork CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Required CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/header.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/message.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/home.css">
+
+
+</head>
+
+<body>
+
+    <!-- Fixed Msg popup loaded -->
+    <header id="header"></header>
+
+    <!-- top story section-->
+    <section class="story-section">
+        <div class="container-xl">
+            <div class="owl-carousel topStorySlider">
+                <div class="story-card">
+                    <img src="img/top-story-img.jpg" class="img-fluid story-bg" alt="story-img">
+                    <div class="story-content">
+                        <h4 class="story-title">The Mission</h4>
+                        <div class="media">
+                            <img src="img/flower.jpg" class="media-img">
+                            <div class="media-body">
+                                <p class="line-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem blanditiis rerum veniam porro, repudiandae dolorum accusamus quaerat error, pariatur perspiciatis aliquam, autem, dignissimos minus nobis tempora perferendis labore impedit esse.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /top story section-->
+
+
+    <!-- home dashboard section-->
+    <section class="home-dashboard">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card group-chat-card chat-list-card chat-card card-rounded overflow-hidden">
+                        <div class="card-header flex-header">
+                            <h4 class="card-title">Group Chat</h4>
+                            <a href="#" class="btn btn-sm btn-outline-secondary radius5 py-0 fw-bolder">change size</a>
+                        </div>
+                        <div class="media">
+                            <img src="img/flower.jpg" class="media-img">
+                            <div class="media-body">
+                                <p class="text-turncate mb-0">Miljopartiet de grona</p>
+                                <p class="text-turncate small">Main chat</p>
+                            </div>
+                            <div class="down-arro">
+                                <img src="img/avtar-arrow-blue.png">
+                            </div>
+                        </div>
+                        <div class="card-body overflow-hidden">
+                            <div class="pre-scrollable">
+                                <div class="chat-view">
+                                    <div class="msg-list-row row mx-auto">
+                                        <div class="col-2 px-0">
+                                            <img src="img/avtar1.png" class="notification-list-img img-fluid">
+                                        </div>
+                                        <div class="col-10 px-2 notification-list-content">
+                                            <p class="name text-tuncate mb-0">Firstname Lastname <span>15:37</span></p>
+                                            <div class="lst-msg text-tuncate">
+                                                Hello, I am good :)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="msg-list-row row mx-auto">
+                                        <div class="col-2 px-0">
+                                            <img src="img/flower.jpg" class="notification-list-img img-fluid">
+                                        </div>
+                                        <div class="col-10 px-2 notification-list-content">
+                                            <p class="name text-tuncate mb-0">Firstname Lastname <span>15:38</span></p>
+                                            <div class="lst-msg text-tuncate">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <form action="#" class="form msg-form" id="msgForm">
+                                <div class="input-group pl-2">
+                                    <a href="#" class="btn btn-outline-secondary px-0" id="file">
+                                        <i class="las la-plus-circle"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary px-1" id="emoji">
+                                        <i class="las la-smile"></i>
+                                    </a>
+                                    <input type="text" class="form-control" placeholder="Write a message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--/Group chat col-->
+
+                <div class="col-md-6">
+                    <div class="feed-card card-rounded mb-4">
+                        <div class="card-header flex-header tab-header">
+                            <h4 class="card-title">Feed</h4>
+                            <ul class="bottom-line-tab nav nav-pills" id="pills-tab">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#allTab" data-bs-toggle="pill">All</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#missionsTab" data-bs-toggle="pill">Missions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#votingsTab" data-bs-toggle="pill">Votings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#eventsTab" data-bs-toggle="pill">Events</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="allTab">
+                                    <div class="post-view">
+                                        <div class="post-header d-flex justify-content-between">
+                                            <div class="media post-meida">
+                                                <img src="img/flower.jpg" class="post-user-img">
+                                                <div class="media-body">
+                                                    <h5 class="user-name">User name <span>created a post</span></h5>
+                                                    <div class="post-time">1h ago</div>
+                                                </div>
+                                            </div>
+                                            <div class="post-action dropdown">
+                                                <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                    <i class="las la-ellipsis-h"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tag</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/post header-->
+                                        <div class="post-body">
+                                            <p class="post-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus aperiam magnam voluptatibus natus, sequi pariatur dolores aliquid laboriosam iure voluptas eius accusantium reprehenderit ullam quo fuga ducimus, perferendis tempora!
+                                            </p>
+                                            <div class="post-img-wrapper">
+
+                                            </div>
+                                            <div class="post-comment-view">
+                                                <div class="post-share">
+                                                    <div>
+                                                        <a href="#">
+                                                            <i class="las la-comment"></i>
+                                                            8 Comments
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#">
+                                                            <i class="las la-share-square"></i>
+                                                            Share
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <i class="las la-bookmark"></i>
+                                                            Bookmark
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="write-cmt mt-2">
+                                                    <div class="media">
+                                                        <img src="img/avtar1.png">
+                                                        <div class="media-body">
+                                                            <form data-brackets-id="838" action="#" class="form msg-form" id="msgForm">
+                                                                <div data-brackets-id="839" class="input-group pl-2">
+                                                                    <a data-brackets-id="840" href="#" class="btn btn-outline-secondary px-0" id="file">
+                                                                        <i data-brackets-id="841" class="las la-plus-circle"></i>
+                                                                    </a>
+                                                                    <a data-brackets-id="842" href="#" class="btn btn-outline-secondary px-1" id="emoji">
+                                                                        <i data-brackets-id="843" class="las la-smile"></i>
+                                                                    </a>
+                                                                    <input data-brackets-id="844" type="text" class="form-control" placeholder="Write a comment">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-reply">
+                                                    <div class="media">
+                                                        <img src="img/flower.jpg">
+                                                        <div class="media-body">
+                                                            <div class="reply-name">Emilio Mller</div>
+                                                            <p class="reply-text">Wow so cool!</p>
+                                                            <div class="reply-time">
+                                                                34m ago
+                                                                <a href="#">Edited</a>
+                                                                <a href="#">Reply</a>
+                                                            </div>
+                                                            <div class="media">
+                                                                <img src="img/flower.jpg">
+                                                                <div class="media-body">
+                                                                    <div class="reply-name">Emilio Mller</div>
+                                                                    <p class="reply-text">Wow so cool!</p>
+                                                                    <div class="reply-time">
+                                                                        34m ago
+                                                                        <a href="#">Edited</a>
+                                                                        <a href="#">Reply</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post-action dropdown">
+                                                                    <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                        <i class="las la-ellipsis-h"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!--/replied media-->
+                                                        </div>
+                                                        <div class="post-action dropdown">
+                                                            <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                <i class="las la-ellipsis-h"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--/commited media-->
+                                                    <div class="media">
+                                                        <img src="img/flower.jpg">
+                                                        <div class="media-body">
+                                                            <div class="reply-name">Emilio Mller</div>
+                                                            <p class="reply-text">Wow so cool!</p>
+                                                            <div class="reply-time">
+                                                                34m ago
+                                                                <a href="#">Edited</a>
+                                                                <a href="#">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-action dropdown">
+                                                            <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                <i class="las la-ellipsis-h"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--/commited media-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/post body-->
+                                    </div>
+                                    <!--/post view 1-->
+
+                                    <div class="post-view">
+                                        <div class="post-header d-flex justify-content-between">
+                                            <div class="media post-meida">
+                                                <img src="img/flower.jpg" class="post-user-img">
+                                                <div class="media-body">
+                                                    <h5 class="user-name">User name <span>created a post</span></h5>
+                                                    <div class="post-time">1h ago</div>
+                                                </div>
+                                            </div>
+                                            <div class="post-action dropdown">
+                                                <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                    <i class="las la-ellipsis-h"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tag</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/post header-->
+                                        <div class="post-body">
+                                            <p class="post-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus aperiam magnam voluptatibus natus, sequi pariatur dolores aliquid laboriosam iure voluptas eius accusantium reprehenderit ullam quo fuga ducimus, perferendis tempora!
+                                            </p>
+                                            <div class="post-img-wrapper">
+                                                <img src="img/post-img.jpg" class="img-fluid" alt="post-img">
+                                            </div>
+                                            <div class="post-comment-view">
+                                                <div class="post-share">
+                                                    <div>
+                                                        <a href="#">
+                                                            <i class="las la-comment"></i>
+                                                            8 Comments
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#">
+                                                            <i class="las la-share-square"></i>
+                                                            Share
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <i class="las la-bookmark"></i>
+                                                            Bookmark
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="write-cmt mt-2">
+                                                    <div class="media">
+                                                        <img src="img/avtar1.png">
+                                                        <div class="media-body">
+                                                            <form data-brackets-id="838" action="#" class="form msg-form" id="msgForm">
+                                                                <div data-brackets-id="839" class="input-group pl-2">
+                                                                    <a data-brackets-id="840" href="#" class="btn btn-outline-secondary px-0" id="file">
+                                                                        <i data-brackets-id="841" class="las la-plus-circle"></i>
+                                                                    </a>
+                                                                    <a data-brackets-id="842" href="#" class="btn btn-outline-secondary px-1" id="emoji">
+                                                                        <i data-brackets-id="843" class="las la-smile"></i>
+                                                                    </a>
+                                                                    <input data-brackets-id="844" type="text" class="form-control" placeholder="Write a comment">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-reply">
+                                                    <div class="media">
+                                                        <img src="img/flower.jpg">
+                                                        <div class="media-body">
+                                                            <div class="reply-name">Emilio Mller</div>
+                                                            <p class="reply-text">Wow so cool!</p>
+                                                            <div class="reply-time">
+                                                                34m ago
+                                                                <a href="#">Edited</a>
+                                                                <a href="#">Reply</a>
+                                                            </div>
+                                                            <div class="media">
+                                                                <img src="img/flower.jpg">
+                                                                <div class="media-body">
+                                                                    <div class="reply-name">Emilio Mller</div>
+                                                                    <p class="reply-text">Wow so cool!</p>
+                                                                    <div class="reply-time">
+                                                                        34m ago
+                                                                        <a href="#">Edited</a>
+                                                                        <a href="#">Reply</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post-action dropdown">
+                                                                    <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                        <i class="las la-ellipsis-h"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!--/replied media-->
+                                                        </div>
+                                                        <div class="post-action dropdown">
+                                                            <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                <i class="las la-ellipsis-h"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--/commited media-->
+                                                    <div class="collapse" id="showMoreCmt">
+                                                        <div class="media">
+                                                            <img src="img/flower.jpg">
+                                                            <div class="media-body">
+                                                                <div class="reply-name">Emilio Mller</div>
+                                                                <p class="reply-text">Wow so cool!</p>
+                                                                <div class="reply-time">
+                                                                    34m ago
+                                                                    <a href="#">Edited</a>
+                                                                    <a href="#">Reply</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-action dropdown">
+                                                                <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                    <i class="las la-ellipsis-h"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!--/commited media-->
+                                                    </div>
+                                                    <a href="#showMoreCmt" class="show-more-cmt" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                                                        Show more comments
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/post body-->
+                                    </div>
+                                    <!--/post view 2-->
+
+                               <div class="post-view">
+                                        <div class="post-header d-flex justify-content-between">
+                                            <div class="media post-meida">
+                                                <img src="img/flower.jpg" class="post-user-img">
+                                                <div class="media-body">
+                                                    <h5 class="user-name">User name <span>created a post</span></h5>
+                                                    <div class="post-time">1h ago</div>
+                                                </div>
+                                            </div>
+                                            <div class="post-action dropdown">
+                                                <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                    <i class="las la-ellipsis-h"></i>
+                                                </a>
+                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Tag</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!--/post header-->
+                                        <div class="post-body">
+                                            <p class="post-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus aperiam magnam voluptatibus natus.
+                                            </p>
+                                            <div class="mission-post-card row g-0">
+                                                <div class="col-md-6">
+                                                    <div class="mission-post-img-view">
+                                                       <img src="img/top-story-img.jpg" class="img-fluid">
+                                                       <div class="img-content">
+                                                           <div>
+                                                               <img src="img/flower.jpg">
+                                                           </div>
+                                                           <div>
+                                                               <div class="d-flex align-items-center justify-content-between">
+                                                                   <h5>734 signatures</h5>
+                                                                   <h5>36%</h5>
+                                                               </div>
+                                                               <div class="progress">
+                                                                  <div class="progress-bar" role="progressbar" style="width:36%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                </div>
+                                                           </div>
+                                                       </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mission-post-content">
+                                                        <h4 class="mission-post-title text-truncate">Tree Mission</h4>
+                                                        <p class="mission-post-para line-4">
+                                                            We wanna plant tree help us plant tree please we will help the environment help us join us we will plant many trees in the forest north of the south will be trees in forest north of the south yea ..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="post-comment-view">
+                                                <div class="post-share">
+                                                    <div>
+                                                        <a href="#">
+                                                            <i class="las la-comment"></i>
+                                                            8 Comments
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <a href="#">
+                                                            <i class="las la-share-square"></i>
+                                                            Share
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <i class="las la-bookmark"></i>
+                                                            Bookmark
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="write-cmt mt-2">
+                                                    <div class="media">
+                                                        <img src="img/avtar1.png">
+                                                        <div class="media-body">
+                                                            <form data-brackets-id="838" action="#" class="form msg-form" id="msgForm">
+                                                                <div data-brackets-id="839" class="input-group pl-2">
+                                                                    <a data-brackets-id="840" href="#" class="btn btn-outline-secondary px-0" id="file">
+                                                                        <i data-brackets-id="841" class="las la-plus-circle"></i>
+                                                                    </a>
+                                                                    <a data-brackets-id="842" href="#" class="btn btn-outline-secondary px-1" id="emoji">
+                                                                        <i data-brackets-id="843" class="las la-smile"></i>
+                                                                    </a>
+                                                                    <input data-brackets-id="844" type="text" class="form-control" placeholder="Write a comment">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-reply">
+                                                    <div class="media">
+                                                        <img src="img/flower.jpg">
+                                                        <div class="media-body">
+                                                            <div class="reply-name">Emilio Mller</div>
+                                                            <p class="reply-text">Wow so cool!</p>
+                                                            <div class="reply-time">
+                                                                34m ago
+                                                                <a href="#">Edited</a>
+                                                                <a href="#">Reply</a>
+                                                            </div>
+                                                            <div class="media">
+                                                                <img src="img/flower.jpg">
+                                                                <div class="media-body">
+                                                                    <div class="reply-name">Emilio Mller</div>
+                                                                    <p class="reply-text">Wow so cool!</p>
+                                                                    <div class="reply-time">
+                                                                        34m ago
+                                                                        <a href="#">Edited</a>
+                                                                        <a href="#">Reply</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="post-action dropdown">
+                                                                    <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                        <i class="las la-ellipsis-h"></i>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!--/replied media-->
+                                                        </div>
+                                                        <div class="post-action dropdown">
+                                                            <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                <i class="las la-ellipsis-h"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!--/commited media-->
+                                                    <div class="collapse" id="showMoreCmt">
+                                                        <div class="media">
+                                                            <img src="img/flower.jpg">
+                                                            <div class="media-body">
+                                                                <div class="reply-name">Emilio Mller</div>
+                                                                <p class="reply-text">Wow so cool!</p>
+                                                                <div class="reply-time">
+                                                                    34m ago
+                                                                    <a href="#">Edited</a>
+                                                                    <a href="#">Reply</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-action dropdown">
+                                                                <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                                                    <i class="las la-ellipsis-h"></i>
+                                                                </a>
+                                                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!--/commited media-->
+                                                    </div>
+                                                    <a href="#showMoreCmt" class="show-more-cmt" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                                                        Show more comments
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/post body-->
+                                    </div>
+                                    <!--/post view 3-->
+                                </div>
+                                <div class="tab-pane fade" id="missionsTab">
+                                    <h5 class="text-center">Missions Content here</h5>
+                                </div>
+                                <div class="tab-pane fade" id="votingsTab">
+                                    <h5 class="text-center">Votings Content here</h5>
+                                </div>
+                                <div class="tab-pane fade" id="eventsTab">
+                                    <h5 class="text-center">Events Content here</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Feed Col-->
+
+                <!-- Trending & Groups Col -->
+                <div class="col-md-3">
+                    <!--Trending Card-->
+                    <div class="card trending-card chat-list-card chat-card card-rounded overflow-hidden">
+                        <div class="card-header pb-0">
+                            <h4 class="card-title">Trendig</h4>
+                            <ul class="bottom-line-tab nav nav-pills" id="pills-tab">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#WorldwideTab" data-bs-toggle="pill">
+                                        Worldwide
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#swedenTab" data-bs-toggle="pill">
+                                        Sweden
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body overflow-hidden">
+                            <div class="pre-scrollable">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="WorldwideTab">
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Flowback</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Liquiddemocrcy</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Globalwarming</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Blacklivesmatter</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">5 #Plantmoretrees</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Globalwarming</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Blacklivesmatter</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">5 #Plantmoretrees</h5>
+                                        </a>
+                                    </div>
+                                    <div class="tab-pane fade" id="swedenTab">
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Flowback</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Liquiddemocrcy</h5>
+                                        </a>
+                                        <a href="#" class="hashtag-row">
+                                            <h5 class="hashtag-title text-truncate">1 #Globalwarming</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Trending Card-->
+                    <!--Groups Card-->
+                    <div class="card groups-card chat-list-card chat-card card-rounded overflow-hidden">
+                        <div class="card-header pb-0">
+                            <h4 class="card-title">Trendig</h4>
+                            <ul class="bottom-line-tab nav nav-pills" id="pills-tab">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#myGroupsTab" data-bs-toggle="pill">
+                                        My Groups
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#newGroupsTab" data-bs-toggle="pill">
+                                        New
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#popularGroupsTab" data-bs-toggle="pill">
+                                        Popular
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body overflow-hidden">
+                            <div class="pre-scrollable">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="myGroupsTab">
+                                        <a href="#" class="media groups-row">
+                                            <img src="img/flower.jpg" class="groups-img">
+                                            <div class="media-body">
+                                                <h6 class="groups-title text-truncate">Kunlabori</h6>
+                                                <p class="groups-status text-truncate">Owner</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="media groups-row">
+                                            <img src="img/flower.jpg" class="groups-img">
+                                            <div class="media-body">
+                                                <h6 class="groups-title text-truncate">Kunlabori</h6>
+                                                <p class="groups-status text-truncate">Owner</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="media groups-row">
+                                            <img src="img/flower.jpg" class="groups-img">
+                                            <div class="media-body">
+                                                <h6 class="groups-title text-truncate">Kunlabori</h6>
+                                                <p class="groups-status text-truncate">Owner</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tab-pane fade" id="newGroupsTab">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="popularGroupsTab">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Trending Card-->
+                </div>
+                <!--/Trending & Group Col-->
+
+            </div>
+        </div>
+    </section>
+    <!-- /home dash-board section-->
+
+
+    <!-- Fixed Msg popup loaded -->
+    <div id="msgPoup"></div>
+    <div id="chatPoup"></div>
+
+    <!--JS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            // load html files
+            $("#header").load("header.html");
+            $("#msgPoup").load("message-list-popup.html");
+            $("#chatPoup").load("chat-popup.html");
+
+        });
+    </script>
+</body>
+
+</html>

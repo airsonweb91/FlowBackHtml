@@ -1,0 +1,147 @@
+<div class="post-view">
+    <div class="post-header d-flex justify-content-between">
+        <div class="media post-meida">
+            <img src="img/flower.jpg" class="post-user-img">
+            <div class="media-body">
+                <h5 class="user-name">User name <span>created a post</span></h5>
+                <div class="post-time">1h ago</div>
+            </div>
+        </div>
+        <div class="post-action dropdown">
+            <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                <i class="las la-ellipsis-h"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">Share</a></li>
+                <li><a class="dropdown-item" href="#">Tag</a></li>
+                <li><a class="dropdown-item" href="#">Delete</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--/post header-->
+    <div class="post-body">
+        <p class="post-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea repellendus aperiam magnam voluptatibus natus, sequi pariatur dolores aliquid laboriosam iure voluptas eius accusantium reprehenderit ullam quo fuga ducimus, perferendis tempora!
+        </p>
+        <div class="post-img-wrapper">
+
+        </div>
+        <div class="post-comment-view">
+            <div class="post-share">
+                <div>
+                    <a href="#">
+                        <i class="las la-comment"></i>
+                        8 Comments
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="las la-share-square"></i>
+                        Share
+                    </a>
+                    <a href="#" class="ml-2">
+                        <i class="las la-bookmark"></i>
+                        Bookmark
+                    </a>
+                </div>
+            </div>
+            <div class="write-cmt mt-2">
+                <div class="media">
+                    <img src="img/avtar1.png">
+                    <div class="media-body">
+                        <form data-brackets-id="838" action="#" class="form msg-form" id="msgForm">
+                            <div data-brackets-id="839" class="input-group pl-2">
+                                <a data-brackets-id="840" href="#" class="btn btn-outline-secondary px-0" id="file">
+                                    <i data-brackets-id="841" class="las la-plus-circle"></i>
+                                </a>
+                                <a data-brackets-id="842" href="#" class="btn btn-outline-secondary px-1" id="emoji">
+                                    <i data-brackets-id="843" class="las la-smile"></i>
+                                </a>
+                                <input data-brackets-id="844" type="text" class="form-control" placeholder="Write a comment">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-reply">
+                <div class="media">
+                    <img src="img/flower.jpg">
+                    <div class="media-body">
+                        <div class="reply-name">Emilio Mller</div>
+                        <p class="reply-text">Wow so cool!</p>
+                        <div class="reply-time">
+                            34m ago
+                            <a href="#">Edited</a>
+                            <a href="#">Reply</a>
+                        </div>
+                        <div class="media">
+                            <img src="img/flower.jpg">
+                            <div class="media-body">
+                                <div class="reply-name">Emilio Mller</div>
+                                <p class="reply-text">Wow so cool!</p>
+                                <div class="reply-time">
+                                    34m ago
+                                    <a href="#">Edited</a>
+                                    <a href="#">Reply</a>
+                                </div>
+                            </div>
+                            <div class="post-action dropdown">
+                                <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                    <i class="las la-ellipsis-h"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/replied media-->
+                    </div>
+                    <div class="post-action dropdown">
+                        <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                            <i class="las la-ellipsis-h"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Share</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/commited media-->
+                <div class="collapse" id="showMoreCmt">
+                    <div class="media">
+                        <img src="img/flower.jpg">
+                        <div class="media-body">
+                            <div class="reply-name">Emilio Mller</div>
+                            <p class="reply-text">Wow so cool!</p>
+                            <div class="reply-time">
+                                34m ago
+                                <a href="#">Edited</a>
+                                <a href="#">Reply</a>
+                            </div>
+                        </div>
+                        <div class="post-action dropdown">
+                            <a href="#" id="postAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                <i class="las la-ellipsis-h"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="postAction" id="postDrop">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Share</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/commited media-->
+                </div>
+                <a href="#showMoreCmt" class="show-more-cmt" data-bs-toggle="collapse" role="button" aria-expanded="false">
+                    Show more comments
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--/post body-->
+</div>
+<!--/post view-->
