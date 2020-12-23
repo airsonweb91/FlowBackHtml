@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     
-    // Registration form step
+    // Home Top Story Slider 
     $('.topStorySlider').owlCarousel({
         loop: true,
         margin: 10,
@@ -23,4 +23,37 @@ $(document).ready(function () {
         }
     });
     
+    // Mission Featured Slider 
+    $('#missionFeatured').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: true,
+        dots: false,
+        responsiveClass: true,
+    });
+    
+    
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

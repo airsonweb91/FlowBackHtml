@@ -16,7 +16,8 @@ body{
 
 
 /*-------- Remove Focus --------*/
-a, a:hover, a:focus, a:active, .form-control, .form-control:hover, .form-control:focus, .form-control:active, .btn, .btn:hover, .btn:focus, .btn:active{
+a, a:hover, a:focus, a:active, .form-control, .form-control:hover, .form-control:focus, .form-control:active, .btn, .btn:hover, .btn:focus, .btn:active, button:hover, button:focus, button:active, input:hover, input:focus, input:active, select:hover, select:focus, select:active, textarea:hover, textarea:focus, textarea:active
+{
     outline: none !important;
     -webkit-outline: none !important;
     box-shadow: none !important;
@@ -341,6 +342,13 @@ a, a:hover, a:focus, a:active{
 .btn-hover.hover-blue:before{
     background-color: rgba(2,100,195,0.1);
 }
+.hover-light-bg:hover{
+    background-color: #e7e6ed;
+}
+.btn-light:hover {
+    background-color: #e7e6ed;
+}
+
 
 /*------ Bounce Animation Right ---*/
 @-webkit-keyframes bounceRight {
@@ -500,6 +508,41 @@ a, a:hover, a:focus, a:active{
     -webkit-transform: translateX(-50%) scale(1);
 }
 
+
+/*-------------- Owl Carousel Customize ------------------*/
+.nav-center.owl-carousel .owl-nav {
+    display: block !important;
+}
+.nav-center.owl-carousel .owl-nav button.owl-next, 
+.nav-center.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-size: 55px;
+    width: 30px;
+    height: 60px;
+    line-height: 10px;
+    -webkit-background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.3);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.nav-center.owl-carousel .owl-nav button.owl-next:hover, 
+.nav-center.owl-carousel .owl-nav button.owl-prev:hover {
+    -webkit-background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
+}
+.nav-center.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.nav-center.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
 
 
 /*=============================================================================
