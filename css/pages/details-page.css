@@ -1,0 +1,161 @@
+/*-------------------------------------------
+           Details Page Dashboard
+-------------------------------------------*/
+/*--Group Chat Chat--*/
+.group-chat-card .msg-form {
+    border-radius: 7px;
+    border: 1px solid #b9b9b9;
+    overflow: hidden;
+}
+.group-chat-card .card-footer{
+    border: 0;
+    padding-bottom: 1rem;
+}
+.group-chat-card .media{
+    align-items: center;
+    border-bottom: 2px solid #d4d4d4;
+    padding: .5rem 1rem;
+}
+.group-chat-card .media .media-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.group-chat-card .media p{
+    margin-bottom: 0;
+    font-family: #575757;
+    font-weight: 700;
+}
+.group-chat-card .media p.small{
+    font-weight: 600;
+}
+
+/*--Center Peopels Court Card--*/
+.peopels-court-header .history-link {
+    font-size: 16px;
+    color: #a8a8a8 !important;
+    font-weight: 600;
+}
+.peopels-court-header .history-link span{
+    color: #575757;
+}
+.peopels-court-header .approved-link {
+    font-size: 16px;
+    color: #575757 !important;
+    font-weight: 600;
+    margin-left: 18px;
+}
+.peopels-court-header .approved-link i {
+    color: #099037;
+    line-height: 0;
+}
+.abstension-row h5 {
+    font-size: 15px;
+    color: #575757;
+    font-weight: 600;
+}
+.peopels-court-footer p{
+    font-size: 15px;
+    color: #a8a8a8;
+    margin-bottom: 5px;
+}
+.peopels-court-footer h6{
+    font-size: 15px;
+    color: #575757;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+
+/*--Details Card--*/
+.details-row{
+   margin-bottom: 12px;
+}
+.details-row h5{
+    font-size: 15px;
+    color: #575757;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+@media (max-width:575px){
+    .details-row{
+       margin-bottom: 7px;
+    }
+     .details-row h5{
+        margin-bottom: 5px;
+    }   
+}
+.details-row .left-txt{
+    color: #A8A8A8;
+}
+
+/*--Right Peopels Court Card--*/
+.peoplesCourtMedia{
+    margin-bottom: 10px;
+}
+.peoplesCourtMedia:last-child{
+    margin-bottom: 0;
+}
+.peoplesCourtMedia i{
+    font-size: 15px;
+    color: #A8A8A8;
+    margin-top: 4px;
+}
+.peoplesCourtMedia p{
+    font-size: 15px;
+    color: #A8A8A8;
+    margin-bottom: 0
+}
+.peoplesCourtMedia h6{
+    font-size: 16px;
+    color: #575757;
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+
+/*--Center What to do Card--*/
+.wcid-card ul{
+    padding: 0;
+}
+.wcid-list>li{
+    margin-bottom: 8px;    
+}
+.wcid-list a{
+    font-size: 15px;
+    color: #575757;
+} 
+.wcid-inner-list{
+    padding-left: 30px !important;
+    list-style:disc;
+    color: #a8a8a8;
+}
+ul.wcid-inner-list a{
+    font-size: 14px;
+    color: #a8a8a8;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

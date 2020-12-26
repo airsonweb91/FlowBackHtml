@@ -34,6 +34,11 @@ $(document).ready(function () {
         responsiveClass: true,
     });
     
+    // Message Popup
+    $('#fixMsgIcon').click(function(){
+        $('#messageList').toggleClass('active');
+        //$('.las.la-sms').toggleClass('la-times');
+    });
     
 });
 
