@@ -1,94 +1,91 @@
 <div class="fixed-chat" id="messageList">
     <div class="card chat-list-card">
-        <a href="#msgList" id="msgListHeader" class="card-header msg-list-header" data-bs-toggle="collapse" aria-expanded="false">
-            <div class="row mx-auto">
-                <div class="col-1 px-0">
-                    <div class="notification-view">
-                        <i class="las la-sms"></i>
-                        <span class="notification-badge">3</span>
-                    </div>
+        <div data-bs-target="#msgList" id="msgListHeader" class="card-header msg-list-header" data-bs-toggle="collapse" aria-expanded="false">
+            <div class="media">
+                <div class="notification-view">
+                    <i class="las la-sms d-none d-sm-block"></i>
+                    <span class="notification-badge d-none d-sm-block">3</span>
+                    <a href="index.html" class="d-sm-none"><i class="las la-arrow-left"></i></a>
                 </div>
-                <div class="col-9">
+                <span class="media-body">
                     <p>Messages</p>
-                </div>
-                <div class="col-2 px-0">
-                    <div class="active-col">
-                        <span class="active-mark"></span>
-                        <span class="active-count">3</span>
-                    </div>
+                </span>
+                <div class="active-col">
+                    <span class="active-mark"></span>
+                    <span class="active-count">3</span>
                 </div>
             </div>
-        </a>
+        </div>
         <div class="collapse" id="msgList">
             <div class="card-body">
                 <div class="pre-scrollable">
                     <div class="chat-view">
-                        <div class="msg-list-row row mx-auto" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
-                            <div class="col-2 px-0">
-                                <img src="img/avtar1.png" class="notification-list-img img-fluid">
-                            </div>
-                            <div class="col-9 px-2 notification-list-content">
+                        <div class="media msg-list-row" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
+                            <img src="img/avtar1.png" class="notification-list-img img-fluid">
+                            <div class="media-body notification-list-content">
                                 <p class="name text-tuncate mb-0">Firstname Lastname</p>
                                 <div class="lst-msg text-tuncate">Last message</div>
                             </div>
-                            <div class="col-1 px-0 text-right">
+                            <div>
                                 <span class="active-mark"></span>
                             </div>
                         </div>
-                        <div class="msg-list-row row mx-auto" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
-                            <div class="col-2 px-0">
-                                <img src="img/flower.jpg" class="notification-list-img img-fluid">
-                            </div>
-                            <div class="col-9 px-2 notification-list-content">
+                        <!--/1-->
+                        <div class="media msg-list-row" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
+                            <img src="img/flower.jpg" class="notification-list-img img-fluid">
+                            <div class="media-body notification-list-content">
                                 <p class="name text-tuncate mb-0">Firstname Lastname</p>
                                 <div class="lst-msg text-tuncate">Last message</div>
                             </div>
-                            <div class="col-1 px-0 text-right">
+                            <div>
                                 <span class="active-mark"></span>
                             </div>
                         </div>
-                        <div class="msg-list-row row mx-auto" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
-                            <div class="col-2 px-0">
-                                <img src="img/avtar1.png" class="notification-list-img img-fluid">
-                            </div>
-                            <div class="col-9 px-2 notification-list-content">
+                        <!--/2-->
+                        <div class="media msg-list-row" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
+                            <img src="img/avtar1.png" class="notification-list-img img-fluid">
+                            <div class="media-body notification-list-content">
                                 <p class="name text-tuncate mb-0">Firstname Lastname</p>
                                 <div class="lst-msg text-tuncate">Last message</div>
                             </div>
-                            <div class="col-1 px-0 text-right">
+                            <div>
                                 <span class="active-mark"></span>
                             </div>
                         </div>
-                        <div class="msg-list-row row mx-auto" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
-                            <div class="col-2 px-0">
-                                <img src="img/flower.jpg" class="notification-list-img img-fluid">
-                            </div>
-                            <div class="col-9 px-2 notification-list-content">
+                        <!--/3-->
+                        <div class="media msg-list-row" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
+                            <img src="img/flower.jpg" class="notification-list-img img-fluid">
+                            <div class="media-body notification-list-content">
                                 <p class="name text-tuncate mb-0">Firstname Lastname</p>
                                 <div class="lst-msg text-tuncate">Last message</div>
                             </div>
-                            <div class="col-1 px-0 text-right"></div>
-                        </div>
-                        <div class="msg-list-row row mx-auto" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
-                            <div class="col-2 px-0">
-                                <img src="img/avtar1.png" class="notification-list-img img-fluid">
+                            <div>
+                                <span class="active-mark"></span>
                             </div>
-                            <div class="col-9 px-2 notification-list-content">
+                        </div>
+                        <!--/4-->
+                        <div class="media msg-list-row" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
+                            <img src="img/avtar1.png" class="notification-list-img img-fluid">
+                            <div class="media-body notification-list-content">
                                 <p class="name text-tuncate mb-0">Firstname Lastname</p>
                                 <div class="lst-msg text-tuncate">Last message</div>
                             </div>
-                            <div class="col-1 px-0 text-right"></div>
-                        </div>
-                        <div class="msg-list-row row mx-auto" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
-                            <div class="col-2 px-0">
-                                <img src="img/flower.jpg" class="notification-list-img img-fluid">
+                            <div>
+                                <span class="active-mark"></span>
                             </div>
-                            <div class="col-9 px-2 notification-list-content">
+                        </div>
+                        <!--/5-->
+                        <div class="media msg-list-row" data-bs-toggle="collapse" data-bs-target="#startChat" aria-expanded="false">
+                            <img src="img/flower.jpg" class="notification-list-img img-fluid">
+                            <div class="media-body notification-list-content">
                                 <p class="name text-tuncate mb-0">Firstname Lastname</p>
                                 <div class="lst-msg text-tuncate">Last message</div>
                             </div>
-                            <div class="col-1 px-0 text-right"></div>
+                            <div>
+                                <span class="active-mark"></span>
+                            </div>
                         </div>
+                        <!--/6-->
                     </div>
                 </div>
             </div>

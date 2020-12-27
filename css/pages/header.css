@@ -5,6 +5,7 @@
     -webkit-filter: drop-shadow(0px 2px 6px rgba(51,47,101,0.1));
     /*box-shadow: 0px 2px 6px rgba(51,47,101,0.1);*/
     /*-webkit-box-shadow: 0px 2px 6px rgba(51,47,101,0.1);*/
+    z-index: 10000;
 }
 .main-logo{
     max-width: 160px;
@@ -232,13 +233,94 @@
     transform: scale(1);
 }
 */
-
+.fixedNavLayer{
+    display: none;
+}
 
 /*=============================================================================
                             Responsive
 =============================================================================*/
 
+@media (max-width:991px){
+    .main-navbar .navbar-brand{
+        z-index: 1000;
+    }
+    .navbar-toggler[aria-expanded="false"] .la-times{
+        -webkit-display: none;
+        display: none;
+    }
+    .navbar-toggler[aria-expanded="true"] .la-bars{
+        -webkit-display: none;
+        display: none;
+    }
+    .navbar-toggler[aria-expanded="true"] .la-times{
+        -webkit-display: block !important;
+        display: block !important;
+    }
+    .main-navbar .navbar-collapse{
+        position: fixed;
+        top: 0;
+        left: -260px;
+        bottom: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: #FFF;
+        -webkit-display: block !important;
+        display: block !important;
+        padding-top: 67px;
+        padding: 67px 15px; 
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        -webkit-z-index: 50;
+        z-index: 50;
+    }
+    .main-navbar .navbar-collapse.show{
+        left: 0;    
+    }
+    .main-nav .nav-link {
+        text-align: left;
+        padding: 8px 10px !important;
+        font-size: 20px;
+        display: -webkit-box;
+        display: flex;
+        align-items: center;
+    }
+    .main-nav .nav-link i {
+        margin-right: 8px;
+    }
+    .main-nav .nav-link span{
+        -webkit-display: inline-block;
+        display: inline-block;
+        line-height: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    .main-navbar .navbar-collapse .fixedNavLayer {
+        display: block;
+        position: fixed;
+        top: 67px;
+        right: 0;
+        bottom: 0;
+        width: -webkit-calc(100% - 250px);
+        -webkit-width: calc(100% - 250px);
+        width: calc(100% - 250px);
+        height: 100vh;
+        background-color: rgba(0,0,0,0.3);
+        -webkit-opacity: 0;
+        opacity: 0;
+        -webkit-visibility: hidden;
+        visibility: hidden;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .main-navbar .navbar-collapse.show .fixedNavLayer {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-visibility: visible; 
+        visibility: visible;
+    }
 
+}
 
 
 
