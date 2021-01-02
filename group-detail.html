@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flowback | Group Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Plugins & Fremwork CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+
+    <!-- Required CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/header.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/message.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/group-detail.css">
+
+</head>
+
+<body>
+
+    <!-- Fixed Msg popup loaded -->
+    <header id="header"></header>
+    
+    <section class="group-profile mt-4">
+        <div class="container-xl">
+            <div class="grupper-card">
+                <div class="grupper-img-view">
+                    <div class="media grupper-img-content">
+                        <img src="img/flower-big.jpg" class="grupper-dp">
+                        <div class="media-body">
+                            <h3 class="grupper-title text-truncate">Miljöpartiet de gröna</h3>
+                        </div>
+                        <div class="grupper-btn-view">
+                            <a href="group-detail.html" class="btn btn-sm btn-block text-light p-0 mb-1">264 <small>members</small></a>
+                            <a href="#" class="btn btn-sm btn-block btn-outline-light">
+                                Join group
+                            </a>
+                        </div>
+                    </div>
+                    <img src="img/grupper-img.jpg" class="grupper-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    
+    <!-- Group Details dashboard section-->
+    <section class="GroupDetails-dashboard mt-4">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="card group-chat-card chat-list-card chat-card card-rounded overflow-hidden">
+                        <div class="card-header flex-header">
+                            <h4 class="card-title">Group Chat</h4>
+                            <a href="#" class="btn btn-sm btn-outline-secondary radius5 py-0 fw-bolder">change size</a>
+                        </div>
+                        <div class="media">
+                            <img src="img/flower.jpg" class="media-img">
+                            <div class="media-body">
+                                <p class="text-turncate mb-0">Miljopartiet de grona</p>
+                                <p class="text-turncate small">Main chat</p>
+                            </div>
+                            <div class="down-arro">
+                                <img src="img/avtar-arrow-blue.png">
+                            </div>
+                        </div>
+                        <div class="card-body overflow-hidden">
+                            <div class="pre-scrollable">
+                                <div class="chat-view">
+                                    <div class="media msg-list-row px-0 border-0">
+                                        <img src="img/avtar1.png" class="notification-list-img img-fluid">
+                                        <div class="media-body pl-2 notification-list-content">
+                                            <p class="name text-tuncate mb-0">Firstname Lastname <span>15:37</span></p>
+                                            <div class="lst-msg text-tuncate">
+                                                Hello, I am good :)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media msg-list-row px-0 border-0">
+                                        <img src="img/flower.jpg" class="notification-list-img img-fluid">
+                                        <div class="media-body pl-2notification-list-content">
+                                            <p class="name text-tuncate mb-0">Firstname Lastname <span>15:38</span></p>
+                                            <div class="lst-msg text-tuncate">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <form action="#" class="form msg-form" id="msgForm">
+                                <div class="input-group pl-2">
+                                    <a href="#" class="btn btn-outline-secondary px-0" id="file">
+                                        <i class="las la-plus-circle"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary px-1" id="emoji">
+                                        <i class="las la-smile"></i>
+                                    </a>
+                                    <input type="text" class="form-control" placeholder="Write a message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--/Left Cards col-->
+
+               <!--Center Cards col-->
+               <div class="col-lg-6 col-md-8">
+                   <div class="document-card card-rounded mb-4">
+                       <div class="card-header flex-header tab-header">
+                           <h4 class="card-title">Documents</h4>
+                           <ul class="bottom-line-tab nav nav-pills" id="pills-tab">
+                               <li class="nav-item">
+                                   <a class="nav-link active" href="#allTab" data-bs-toggle="pill">
+                                       All
+                                   </a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#protocolsTab" data-bs-toggle="pill">
+                                       Protocols
+                                   </a>
+                               </li>
+                               <li class="nav-item">
+                                   <a class="nav-link" href="#typedocumentsTab" data-bs-toggle="pill">
+                                       Typedocuments
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="card-body">
+                           <div class="tab-content" id="pills-tabContent">
+                               <div class="tab-pane fade show active" id="allTab">
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper-unlock.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Protocol for today's meeting</h6>
+                                           <p class="doc-date text-truncate">Creating now</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <!--/1-doc-->
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <!--/2-doc-->
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <!--/3-doc-->
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper-lock.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <!--/4-doc-->
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <!--/5-doc-->
+                               </div>
+                               <!--/All-Tab-->
+                               <div class="tab-pane fade" id="protocolsTab">
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper-unlock.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Protocol for today's meeting</h6>
+                                           <p class="doc-date text-truncate">Creating now</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                               </div>
+                               <!--/Protocols-Tab-->
+                               <div class="tab-pane fade" id="typedocumentsTab">
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <div class="media doctument-row">
+                                       <div class="doc-img-view">
+                                           <img src="img/doc-paper.png">
+                                       </div>
+                                        <div class="media-body">
+                                           <h6 class="doc-title text-truncate">Document name</h6>
+                                           <p class="doc-date text-truncate">Created 2020 08 14</p>
+                                       </div>
+                                       <div class="document-action dropdown">
+                                           <a href="#" id="docAction" data-bs-toggle="dropdown" aria-expanded="true">
+                                               <i class="las la-ellipsis-h h5 mb-0 text-dark"></i>
+                                           </a>
+                                           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="docAction" id="docDrop">
+                                               <li><a class="dropdown-item" href="#">Edit</a></li>
+                                               <li><a class="dropdown-item" href="#">Share</a></li>
+                                               <li><a class="dropdown-item" href="#">Delete</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                               </div>
+                               <!--/Typedocuments-Tab-->
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!--/Center Col-->
+
+                <!--Right Cards Col -->
+                <div class="col-lg-3 col-md-4">
+                    <!--Info-list Card-->
+                    <div class="card info-list-card card-rounded overflow-hidden mb-4">
+                        <div class="card-body overflow-hidden">
+                            <div class="media info-list-media">
+                                <i class="lab la-wpforms"></i>
+                                <div class="media-body">
+                                    <h5 class="text-truncate">Feed</h5>
+                                </div>
+                            </div>
+                            <div class="media info-list-media">
+                                <i class="las la-info-circle"></i>
+                                <div class="media-body">
+                                    <h5 class="text-truncate">About</h5>
+                                </div>
+                            </div>
+                            <div class="media info-list-media">
+                                <i class="las la-calendar-alt"></i>
+                                <div class="media-body">
+                                    <h5 class="text-truncate">Events</h5>
+                                </div>
+                            </div>
+                            <div class="media info-list-media">
+                                <i class="las la-file-alt"></i>
+                                <div class="media-body">
+                                    <h5 class="text-truncate">Documents</h5>
+                                </div>
+                            </div>
+                            <div class="media info-list-media">
+                                <i class="las la-dot-circle"></i>
+                                <div class="media-body">
+                                    <h5 class="text-truncate">Delegations</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Info-list Card-->
+                    
+                    <!--Voice Chat Card-->
+                    <div class="card voice-chat-card card-rounded overflow-hidden mb-4">
+                       <div class="card-header flex-header">
+                           <h4 class="card-title">Voice Chat</h4>
+                           <div class="voice-chat-btns">
+                               <a href="#"><i class="las la-microphone"></i></a>
+                               <a href="#"><i class="las la-headphones"></i></a>
+                           </div>
+                       </div>
+                        <div class="card-body overflow-hidden">
+                            <div class="media voice-chat-media">
+                                <i class="las la-microphone"></i>
+                                <div class="media-body">
+                                    <h6 class="mb-0">Voice chat 1</h6>
+                                </div>
+                            </div>
+                            <div class="media voice-chat-media">
+                                <i class="las la-microphone"></i>
+                                <div class="media-body">
+                                    <h6 class="mb-0">Voice chat 1</h6>
+                                </div>
+                            </div>
+                            <div class="media voice-chat-media">
+                                <i class="las la-microphone-slash"></i>
+                                <div class="media-body">
+                                    <h6 class="mb-0">Meeting room</h6>
+                                    <div class="meeting-person d-flex align-items-center">
+                                        <img src="img/avtar1.png">
+                                        <h6 class="text-truncate">Loke Hagberg</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Voice Chat Card-->
+                </div>
+                <!--/Right Cards Col-->
+
+            </div>
+        </div>
+    </section>
+    <!-- /home dash-board section-->
+
+
+    <!-- Fixed Msg popup loaded -->
+    <div id="msgPoup"></div>
+    <div id="chatPoup"></div>
+    
+    <!--Fixed Msg Button-->
+    <a href="#" id="fixMsgIcon">
+        <i class="las la-sms"></i>
+        <span class="notification-badge">3</span>
+    </a>
+
+    <!--JS-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            // load html files
+            $("#header").load("header.html");
+            $("#msgPoup").load("message-list-popup.html");
+            $("#chatPoup").load("chat-popup.html");
+            
+        });
+    </script>
+</body>
+
+</html>

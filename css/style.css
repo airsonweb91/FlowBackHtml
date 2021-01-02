@@ -471,6 +471,7 @@ a, a:hover, a:focus, a:active{
     -webkit-justify-content: space-between;
     justify-content: space-between;
 }
+
 .card-rounded .card-header{
     padding-top: .8rem;
     /*padding-bottom: .8rem;*/
@@ -577,7 +578,6 @@ a, a:hover, a:focus, a:active{
 /*=============================================================================
                             Responsive Views
 =============================================================================*/
-
 
 
 
