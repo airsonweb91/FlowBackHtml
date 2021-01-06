@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="css/pages/profile.css" />
+
+<!-- Profile Modal -->
+<div class="modal fade" id="profileModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content profile-view">
+        <div class="profile-cover">
+            <div class="media profile-media align-items-end">
+                <img src="img/profile-img.jpg" class="dp">
+                <div class="media-body">
+                    <h3 class="person-name">Loke Hagberg</h3>
+                    <a href="#" class="btn btn-sm btn-outline-light radius8">Add contact</a>
+                    <a href="#" class="btn btn-sm btn-outline-light radius8">Send message</a>
+                    <a href="#" class="btn btn-sm btn-outline-light radius8"><i class="las la-ellipsis-h"></i></a>
+                </div>
+            </div>
+            <button class="btn btn-outline-light profile-btn profile-edit-btn" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                <i class="las la-pen"></i>
+            </button>
+            <img src="img/profile-cover-img.jpg" class="profile-cover-img">
+        </div>
+        <div class="profile-content">
+            <h5>About Loke</h5>
+            <p>
+                Biography about user, about loke hagberg, descpriptive bio in this box here. Biography about user,
+                about loke hagberg, descpriptive bio in this box here.
+            </p>
+            <div class="mb-3">
+                <a href="#" class="user-link">
+                   <i class="las la-link"></i>
+                    https://www.instagram.com/qunalun/
+                </a>
+            </div>
+            <div class="row mx-auto g-0">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <a href="#" class="user-link">
+                       <i class="las la-map-pin"></i>
+                        Stockholm, Sweden
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#" class="user-link">
+                       <i class="las la-user-plus"></i>
+                        Joined 2020 09 07
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- /End Profile Modal -->
+
+<!-- Edit-Profile Modal -->
+<div class="modal fade show" id="editProfileModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content profile-view">
+        <div class="profile-cover">
+            <div class="media profile-media align-items-end">
+                <a href="#" class="edit-dp"><img src="img/profile-img.jpg" class="dp"></a>
+                <div class="media-body">
+                    <h3 class="person-name">Loke Hagberg</h3>
+                    <a href="#" class="btn btn-sm btn-outline-light radius8">Add contact</a>
+                    <a href="#" class="btn btn-sm btn-outline-light radius8">Send message</a>
+                    <a href="#" class="btn btn-sm btn-outline-light radius8"><i class="las la-ellipsis-h"></i></a>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-light profile-btn" data-bs-toggle="modal" data-bs-target="#editProfileModal">
+                <i class="las la-save"></i>
+            </button>
+            <a href="#" class="edit-cover-pic"><img src="img/profile-cover-img.jpg" class="profile-cover-img"></a>
+        </div>
+        <form action="#" class="edit-pro-form profile-content">
+            <h5>About Loke2</h5>
+            <textarea class="form-control mb-3" name="about-user" id="about-user" placeholder="Biography about user, about loke hagberg, descpriptive bio in this box here. Biography about user, about loke hagberg, descpriptive bio in this box here."></textarea>
+            <div class="mb-3">
+                <div class="user-link">
+                   <i class="las la-link"></i>
+                    <input type="text" class="form-control" value="https://www.instagram.com/qunalun/" placeholder="Site-link"/>
+                </div>
+            </div>
+            <div class="row mx-auto g-0">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="user-link">
+                        <i class="las la-map-pin"></i>
+                        <input type="text" class="form-control" value="Stockholm, Sweden" placeholder="Address"/>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <a href="#" class="user-link">
+                       <i class="las la-user-plus"></i>
+                        Joined 2020 09 07
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+<!-- /End Edit-Profile Modal -->  
+
+<script>
+    $(document).ready(function() {
+        // Profile Popup
+        $( ".profile-edit-btn" ).on( "click", function() {
+          $( "#profileModal" ).trigger( "click" );
+        });
+    });
+</script>

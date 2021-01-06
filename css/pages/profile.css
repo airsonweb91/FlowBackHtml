@@ -1,0 +1,167 @@
+/*--====== Profile Modal  =======--*/
+.modal{
+    transform: -webkit-scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 0.4s;
+}
+.modal.show{
+    transform: -webkit-scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.modal-dialog{
+    max-width: 768px;
+}
+
+.profile-view{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.profile-cover{
+    position: relative;
+    width: 100%;
+    height: 230px;
+    padding: 40px;
+    z-index: 25;
+}
+.profile-cover:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: -webkit-linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    -webkit-background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-z-index: -1;
+    z-index: -1;
+}
+.profile-cover .profile-cover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-z-index: -1;
+    z-index: -1;
+}
+.profile-media .dp{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+.profile-media .media-body{
+    padding-left: 30px
+}
+.profile-media .person-name{
+    color: #FFF;
+    font-size: 28px;
+}
+.profile-media .media-body .btn{
+    margin-right: 10px;
+}
+.profile-media .media-body .btn:last-child{
+    margin-right: 0;
+}
+.profile-cover .profile-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.profile-content{
+    position: relative;
+    padding: 40px;
+}
+.profile-content *{
+    color: #575757;
+    font-weight: 600;
+}
+.profile-content .user-link i{
+    font-size: 18px;
+}
+.profile-content .user-link:hover,
+.profile-content .user-link:hover i{
+    color: #0566c4;
+}
+
+
+/*--====== Edit Profile Modal  =======--*/
+.edit-cover-pic:before {
+    content: 'Change Cover Picture';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    pointer-events: none;
+}
+
+.edit-dp{
+    position: relative;
+}
+.edit-dp:before {
+    content: 'Change Profile Picture';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 27px;
+    text-align: center;
+    color: #FFF;
+    pointer-events: none;
+}
+.edit-pro-form .form-control {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    resize: none;
+    font-size: 15px;
+    color: #575757;
+}
+.edit-pro-form .user-link {
+    display: -webkit-box;
+    -webkit-display: flex;
+    display: flex;
+}
+.edit-pro-form .user-link i {
+    padding-right: 5px;
+    padding-top: 1px;
+}
+
+
+/*----------------------------------------------------
+                Responsive View
+----------------------------------------------------*/
+/*
+@media (max-width: 575px){
+    
+    .profile-media {
+        display: block;
+    }
+}
+*/
+
+
