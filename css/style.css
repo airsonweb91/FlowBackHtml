@@ -534,6 +534,25 @@ a, a:hover, a:focus, a:active{
     -webkit-transform: translateX(-50%) scale(1);
 }
 
+@media (max-width: 575px){
+    .bottom-line-tab{
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .bottom-line-tab::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .bottom-line-tab .nav-link{
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+}
+
 
 /*-------------- Owl Carousel Customize ------------------*/
 .nav-center.owl-carousel .owl-nav {

@@ -1,0 +1,98 @@
+.activity-log-view{
+    
+}
+.activity-card{
+/*    margin-top: 1.5rem;*/
+/*    margin-bottom: 1.5rem;*/
+}
+.activity-log{
+    font-size: 17px;
+    color: #565656;
+    font-weight: 600;
+/*    padding: 10px;*/
+    border-radius: 7px;
+    transition: 0.2s;
+    margin-bottom: 15px;
+}
+.activity-log:last-child{
+    margin-bottom: 0;
+}
+.activity-log:hover {
+/*    background-color: #e7e6ed;*/
+}
+.activity-log .media-body{
+    padding-right: 10px;
+}
+.activity-log img{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    object-fit: cover;
+}
+.activity-log h6{
+    font-size: 15px;
+    color: #575757;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: normal
+}
+.activity-log p{
+    font-size: 13px;
+    color: #7e7e7e;
+    /*margin-top: 5px;*/
+    margin-bottom: 0;
+}
+.requests-btns {
+    width: 112px;
+}
+.requests-btns .btn{
+    font-weight: normal;
+    border-radius: 5px;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+/*===========================================
+            Responsive View
+===========================================*/
+@media (max-width:767px){
+    .activity-card .flex-header {
+        display: -webkit-box;
+        -webkit-display: block;
+        display: block;
+    }
+    
+}
+@media (max-width:575px){
+    .activity-log img {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .activity-log p {
+        font-size: 11px;
+         margin-top: 0; 
+    }
+    .activity-log h6 {
+        font-size: 12px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

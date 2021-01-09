@@ -1,4 +1,10 @@
 /*--====== Profile Modal  =======--*/
+body.modal-open {
+    position: fixed;
+    width: 100%;
+    padding: 0 !important;
+    overflow: hidden;
+}
 .modal{
     transform: -webkit-scale(0);
     -webkit-transform: scale(0);
